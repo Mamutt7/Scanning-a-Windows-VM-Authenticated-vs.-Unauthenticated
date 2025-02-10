@@ -8,7 +8,7 @@ Here ive created an inbound rule to allow any traffic to flow through the create
 
 ![image](https://github.com/user-attachments/assets/f18370e8-6e9a-400d-94c1-96914335c842)
 
-Now in within the VM, run this powershell command AS AN ADMIN on your VM to enable remote administrative access by modifying the LocalAccountTokenFilterPolicy registry key. This command sets a registry key that allows local accounts (for example, labuser) to connect remotely with full administrative privileges without requiring elevation:
+Now within the VM, run this powershell command AS AN ADMIN on your VM to enable remote administrative access by modifying the LocalAccountTokenFilterPolicy registry key. This command sets a registry key that allows local accounts (for example, labuser) to connect remotely with full administrative privileges without requiring elevation:
 
 ```
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy" -Value 1 -Type DWord -Force
