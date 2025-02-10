@@ -13,10 +13,12 @@ Now within the VM, run this powershell command AS AN ADMIN on your VM to enable 
 ```
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy" -Value 1 -Type DWord -Force
 ```
+
 ![image](https://github.com/user-attachments/assets/a3ba304d-4db9-43d6-a386-f86a95f0de84)
 I've configured settings to run a scan on the VM created during this lab using Tenable and will now wait for the scan results.
 
 ![image](https://github.com/user-attachments/assets/67ea2c0c-49f0-4953-a2f3-ebbf80f78648)
 The Unauthenticated scan was completed after 10 minutes, and we saw some medium-level severity threats. These will be addressed or remediated in future labs.
 
-An Authenticated scan was done taking 13 minutes to complete, in this scan we saw even more vulnerabilities that were at a higher threat level.
+![image](https://github.com/user-attachments/assets/59b59d7b-9802-4e9d-8717-131bc9ff7d5b)
+An Authenticated scan was done taking 25 minutes to complete, in this scan we saw even more vulnerabilities that were at a higher threat level.
