@@ -13,3 +13,6 @@ Now within the VM, run this powershell command AS AN ADMIN on your VM to enable 
 ```
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy" -Value 1 -Type DWord -Force
 ```
+![image](https://github.com/user-attachments/assets/a3ba304d-4db9-43d6-a386-f86a95f0de84)
+I've configured settings to run a scan on the VM created during this lab using Tenable and will now wait for the scan results.
+
