@@ -17,4 +17,6 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 I've configured settings to run a scan on the VM created during this lab using Tenable and will now wait for the scan results.
 
 ![image](https://github.com/user-attachments/assets/67ea2c0c-49f0-4953-a2f3-ebbf80f78648)
-The scan was completed after 10 minutes, and we see we have some medium-level severity threats. These will be addressed or remediated in future labs.
+The Unauthenticated scan was completed after 10 minutes, and we saw some medium-level severity threats. These will be addressed or remediated in future labs.
+
+An Authenticated scan was done taking 13 minutes to complete, in this scan we saw even more vulnerabilities that were at a higher threat level.
